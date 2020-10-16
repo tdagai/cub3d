@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 23:00:35 by teva              #+#    #+#             */
-/*   Updated: 2020/10/14 16:55:20 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/15 08:29:41 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef	struct	s_info
 	void		*init;
 	void		*window;
 	void		*img_ptr;
+	int			pixels;
 	t_xy		res;
 }				t_info;
 

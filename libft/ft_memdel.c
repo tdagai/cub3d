@@ -6,7 +6,7 @@
 /*   By: tdagai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 11:39:39 by tdagai            #+#    #+#             */
-/*   Updated: 2020/02/21 12:04:01 by tdagai           ###   ########.fr       */
+/*   Updated: 2020/10/15 12:44:28 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,13 @@ void	ft_memdel(void **ap)
 		*ap = NULL;
 	}
 }
+
+void	ft_memdel_gnl(void *ap)
+{
+	if (ap)
+	{
+		free(ap);
+		ap = NULL;
+	}
+}
+

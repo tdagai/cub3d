@@ -6,7 +6,7 @@
 /*   By: tdagai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:55:51 by tdagai            #+#    #+#             */
-/*   Updated: 2020/07/22 12:59:40 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/15 13:13:26 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <string.h>
 # include <stdlib.h>
 # include <stdint.h>
+
+# define MAX_FD 256
+# define BUFFER_SIZE 100
 
 typedef struct		s_list
 {
@@ -121,5 +124,11 @@ long double			ft_pow(long double dbl, long double pwr);
 long double			ft_abs_dbl(long double dbl);
 long double			ft_doublemod(long double x, long double y);
 long double			ft_dtoa_round(long double dbl, int prec);
+
+int					get_next_line(int fd, char **line);
+int					ft_strchr_gnl(const char *str, int c);
+void				ft_memdel_gnl(void *ap);
+char				*ft_strjoin_gnl(char *s1, char *s2, size_t size);
+char				*ft_strnew_gnl(void);
 
 #endif

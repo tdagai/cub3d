@@ -6,11 +6,12 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 12:25:11 by teva              #+#    #+#             */
-/*   Updated: 2020/10/15 07:54:59 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/15 11:49:26 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/cub3d.h"
+#include <stdio.h>
 
 static void	create_scene(t_info *s)
 {

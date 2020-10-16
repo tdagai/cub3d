@@ -6,7 +6,7 @@
 #    By: tdagai <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/19 18:58:42 by tdagai            #+#    #+#              #
-#    Updated: 2020/07/17 11:40:20 by teva             ###   ########.fr        #
+#    Updated: 2020/10/15 13:16:37 by teva             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ SRC = ft_isdigit.c		ft_lstnew.c		ft_memset.c		ft_putstr_fd.c		ft_strequ.c\
 	  ft_calloc.c		ft_strlcpy.c	ft_lstadd_front.c					ft_itoa_base.c\
 	  ft_itoa_base_unsigned.c			ft_pow.c		ft_round.c			ft_strappend.c\
 	  ft_realloc.c		ft_dtoa.c		ft_strfill.c	ft_downsize.c		ft_abs.c\
-	  ft_lstadd_back.c	ft_signbit.c
+	  ft_lstadd_back.c	ft_signbit.c	get_next_line.c
+
+OBJ = $(SRC:.c=.o)
 
 .PHONY: all clean fclean re
 
@@ -35,11 +37,11 @@ all: $(NAME)
 
 $(NAME):
 	@-gcc -Wall -Wextra -Werror -c $(SRC)
-	ar rcs $(NAME) *.o
+	ar rcs $(NAME) $(OBJ)
 	ranlib $(NAME)
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
