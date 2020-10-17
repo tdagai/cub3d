@@ -6,7 +6,7 @@
 #    By: teva <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/14 15:37:03 by teva              #+#    #+#              #
-#    Updated: 2020/10/15 09:24:04 by teva             ###   ########.fr        #
+#    Updated: 2020/10/17 15:18:04 by teva             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = cub3D
 
 FLAGS = -Wall -Werror -Wextra -g
 
-SOURCE = main.c on_key_press.c
+SOURCE = main.c on_key_press.c read_file.c
 SRC_PATH = ./src
 SRC = $(addprefix $(SRC_PATH)/,$(SOURCE))
 
@@ -25,6 +25,7 @@ LIB_LINK = -I $(LIB_PATH) -L $(LIB_PATH) -lft
 
 MLX_PATH = ./minilibx
 MLX_LINK = -I $(MLX_PATH) -L $(MLX_PATH) -lmlx -framework OpenGL -framework AppKit -lz
+
 
 OBJ = $(SOURCE:.c=.o)
 

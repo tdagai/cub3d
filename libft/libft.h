@@ -6,7 +6,7 @@
 /*   By: tdagai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:55:51 by tdagai            #+#    #+#             */
-/*   Updated: 2020/10/15 13:13:26 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/17 15:24:57 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
+int					ft_wordcount(char **words);
 int					ft_atoi(char *str);
 int					ft_signbit(double x);
 int					ft_round_half_to_even(long double dbl, int prec);
@@ -79,6 +80,7 @@ char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s1, char const *set);
 char				**ft_split(const char *s, char c);
 char				**ft_split_funcs(char *str, const char *charset);
+char				**ft_strsplit(char const *s, char c);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putchar(char c);
 void				ft_putstr_fd(char const *str, int fd);

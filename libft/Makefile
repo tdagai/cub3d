@@ -6,7 +6,7 @@
 #    By: tdagai <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/19 18:58:42 by tdagai            #+#    #+#              #
-#    Updated: 2020/10/15 13:16:37 by teva             ###   ########.fr        #
+#    Updated: 2020/10/17 15:26:14 by teva             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRC = ft_isdigit.c		ft_lstnew.c		ft_memset.c		ft_putstr_fd.c		ft_strequ.c\
 	  ft_calloc.c		ft_strlcpy.c	ft_lstadd_front.c					ft_itoa_base.c\
 	  ft_itoa_base_unsigned.c			ft_pow.c		ft_round.c			ft_strappend.c\
 	  ft_realloc.c		ft_dtoa.c		ft_strfill.c	ft_downsize.c		ft_abs.c\
-	  ft_lstadd_back.c	ft_signbit.c	get_next_line.c
+	  ft_lstadd_back.c	ft_signbit.c	get_next_line.c	ft_wordcount.c		ft_strsplit.c\
 
 OBJ = $(SRC:.c=.o)
 
@@ -47,4 +47,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
