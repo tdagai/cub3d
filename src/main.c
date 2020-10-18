@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 12:25:11 by teva              #+#    #+#             */
-/*   Updated: 2020/10/17 14:46:42 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 01:04:41 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,12 @@ int			main(int ac, char **av)
 {
 	t_info	*s;
 
-	(void)ac;
+	if (ac != 2)
+		ft_error(ARG_ERROR);
 	s = (t_info *)ft_memalloc(sizeof(t_info));
-	read_cub_file(av[1], s);
-	s->res.x = 1280;
-	s->res.y = 720;
+	s = read_cub_file(av[1], s);
+	printf("x:	%i\ny:	%i\nnorth:	%s\nsouth:	%s\nwest:	%s\neast:	%s\n",\
+			s->res.x, s->res.y, s->north, s->south, s->west, s->east);
 	create_scene(s);
 	return(0);
 }

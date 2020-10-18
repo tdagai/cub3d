@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 13:32:42 by teva              #+#    #+#             */
-/*   Updated: 2020/10/15 08:18:43 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 00:53:40 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,16 @@
 # define CYAN       0X00FFFF
 # define WHITE      0XFFFFFF
 # define BLACK      0X000000
+
+/* ******** */
+/*	ERRORS  */
+/* ******** */
+
+# define ARG_ERROR				1
+# define FILE_OPEN_ERROR		2
+# define FILE_CLOSE_ERROR		3
+# define ARGS_IN_FILE_ERROR		4
+# define TYPE_IDENTIFIER_ERROR	5
+# define READ_ERROR				6
 
 #endif

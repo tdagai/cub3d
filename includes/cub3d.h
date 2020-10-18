@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 22:52:09 by teva              #+#    #+#             */
-/*   Updated: 2020/10/17 14:12:38 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 03:14:17 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,33 @@ int				close_program(t_info *s);
 
 int				on_key_press(int key_code, t_info *s);
 
+/* ******************* */
+/*	read_file.c funcs  */
+/* ******************* */
+
+t_info			*read_cub_file(char *filename, t_info *s);
+t_info			*manage_file_data(char **split, t_info *s);
+t_info			*set_resolution(char **split, t_info *s);
+
+/* **************** */
+/*	errors.c funcs  */
+/* **************** */
+
+void			ft_error(int error_num);
+
+/* ************************* */
+/*	funcs_that_free.c funcs  */
+/* ************************* */
+
+void			free_split(char **split);
+
 /* ********************** */
-/*	read_file.c funcs	  */
+/*	set_textures.c funcs  */
 /* ********************** */
 
-char			*read_cub_file(char *filename, t_info *s);
+t_info			*set_north_texture(char **split, t_info *s);
+t_info			*set_south_texture(char **split, t_info *s);
+t_info			*set_west_texture(char **split, t_info *s);
+t_info			*set_east_texture(char **split, t_info *s);
 
 #endif

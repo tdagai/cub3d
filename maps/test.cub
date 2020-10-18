@@ -1,1 +1,7 @@
 R 1280 720
+
+NO ./textures/brick.xpm
+SO ./textures/blue.xpm
+WE ./textures/wood.xpm
+EA ./textures/grey.xpm
+
