@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/17 13:22:31 by teva              #+#    #+#             */
-/*   Updated: 2020/10/18 03:29:25 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 14:51:15 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ t_info		*manage_file_data(char **split, t_info *s)
 		s = set_west_texture(split, s);
 	else if (split != NULL && ft_strcmp(split[0], "EA") == 0)
 		s = set_east_texture(split, s);
+	else if (split != NULL && ft_strcmp(split[0], "S") == 0)
+		s = set_sprite_texture(split, s);
 	else
 		ft_error(TYPE_IDENTIFIER_ERROR);
 	return (s);
@@ -51,13 +53,15 @@ t_info		*manage_file_data(char **split, t_info *s)
 t_info		*read_cub_file(char *filename, t_info *s)
 {
 	int		fd;
+	int		gnl_error;
 	char	*line;
 	char	**split;
 
 	if ((fd = open(filename, O_RDONLY)) == -1)
 		ft_error(FILE_OPEN_ERROR);
-	while (get_next_line(fd, &line) != 0)
+	while ((gnl_error = get_next_line(fd, &line)) != 0)
 	{
+		gnl_error == -1 ? ft_error(READ_ERROR) : 0;
 		split = ft_strsplit(line, ' ');
 		if (split[0] == NULL)
 			continue;

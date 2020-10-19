@@ -6,7 +6,7 @@
 /*   By: tdagai <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:55:51 by tdagai            #+#    #+#             */
-/*   Updated: 2020/10/17 15:24:57 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 15:09:40 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ int					ft_lstsize(t_list *lst);
 int					ft_putstr(char const *s);
 int					ft_parse_digits(long long int i, int base);
 int					ft_left_of_dot(long double dbl);
+int					ft_file_extension(const char *filename,
+					const char *file_extension);
 char				*ft_dtoa(long double d, size_t prec, size_t base);
 char				*ft_itoa(int i);
 char				*ft_itoa_base(long long int i, int base);

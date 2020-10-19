@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 22:52:09 by teva              #+#    #+#             */
-/*   Updated: 2020/10/18 03:14:17 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 14:48:28 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,6 @@ t_info			*set_north_texture(char **split, t_info *s);
 t_info			*set_south_texture(char **split, t_info *s);
 t_info			*set_west_texture(char **split, t_info *s);
 t_info			*set_east_texture(char **split, t_info *s);
+t_info			*set_sprite_texture(char **split, t_info *s);
 
 #endif

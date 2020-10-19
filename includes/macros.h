@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 13:32:42 by teva              #+#    #+#             */
-/*   Updated: 2020/10/18 00:53:40 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/18 23:04:48 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@
 # define ARGS_IN_FILE_ERROR		4
 # define TYPE_IDENTIFIER_ERROR	5
 # define READ_ERROR				6
+# define FILE_EXTENSION_ERROR	7
 
 #endif
