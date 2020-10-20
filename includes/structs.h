@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 23:00:35 by teva              #+#    #+#             */
-/*   Updated: 2020/10/18 00:05:45 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/19 18:42:38 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ typedef	struct	s_info
 	char		*west;
 	char		*east;
 	char		*sprite;
-	char		*floor_color;
-	char		*cieling_color;
+	int			floor_color[3];
+	int			ceiling_color[3];
 	char		**map;
-	int			pixels;
 	t_xy		res;
+	t_xy		map_dim;
 }				t_info;
 
 #endif

@@ -6,7 +6,7 @@
 #    By: teva <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/14 15:37:03 by teva              #+#    #+#              #
-#    Updated: 2020/10/18 00:56:10 by teva             ###   ########.fr        #
+#    Updated: 2020/10/19 19:32:25 by teva             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,9 @@ NAME = cub3D
 FLAGS = -Wall -Werror -Wextra -g
 
 SOURCE =	main.c			on_key_press.c			read_file.c\
-			error.c			funcs_that_free.c		set_textures.c
+			misc.c			funcs_that_free.c		set_textures.c\
+			colors.c		init_map.c
+
 SRC_PATH = ./src
 SRC = $(addprefix $(SRC_PATH)/,$(SOURCE))
 

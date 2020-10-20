@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 22:52:09 by teva              #+#    #+#             */
-/*   Updated: 2020/10/18 14:48:28 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/19 19:28:18 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,13 @@ int				on_key_press(int key_code, t_info *s);
 /* ******************* */
 
 t_info			*read_cub_file(char *filename, t_info *s);
-t_info			*manage_file_data(char **split, t_info *s);
+t_info			*read_map(char *filename, t_info *s);
+t_info			*manage_file_data(char *line, t_info *s);
 t_info			*set_resolution(char **split, t_info *s);
 
-/* **************** */
-/*	errors.c funcs  */
-/* **************** */
+/* ************** */
+/*	misc.c funcs  */
+/* ************** */
 
 void			ft_error(int error_num);
 
@@ -52,6 +53,7 @@ void			ft_error(int error_num);
 /* ************************* */
 
 void			free_split(char **split);
+void			free_struct(t_info *s);
 
 /* ********************** */
 /*	set_textures.c funcs  */
@@ -62,5 +64,17 @@ t_info			*set_south_texture(char **split, t_info *s);
 t_info			*set_west_texture(char **split, t_info *s);
 t_info			*set_east_texture(char **split, t_info *s);
 t_info			*set_sprite_texture(char **split, t_info *s);
+
+/* **************** */
+/*	colors.c funcs  */
+/* **************** */
+
+t_info			*set_color_rgb(char **split, t_info *s, char identifier);
+
+/* ****************** */
+/*	init_map.c funcs  */
+/* ****************** */
+
+char			**init_map(int len, int wid, char fill);
 
 #endif
