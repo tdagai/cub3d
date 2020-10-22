@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 13:32:42 by teva              #+#    #+#             */
-/*   Updated: 2020/10/18 23:04:48 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/21 13:30:12 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@
 # define TYPE_IDENTIFIER_ERROR	5
 # define READ_ERROR				6
 # define FILE_EXTENSION_ERROR	7
+# define MAP_ERROR				8
 
 #endif

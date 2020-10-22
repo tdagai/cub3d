@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 23:00:35 by teva              #+#    #+#             */
-/*   Updated: 2020/10/19 18:42:38 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/21 17:06:10 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ typedef	struct	s_info
 	char		**map;
 	t_xy		res;
 	t_xy		map_dim;
+	t_xy		spawn_point;
 }				t_info;
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 22:52:09 by teva              #+#    #+#             */
-/*   Updated: 2020/10/19 19:28:18 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/21 18:56:28 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ t_info			*set_resolution(char **split, t_info *s);
 /* ************** */
 
 void			ft_error(int error_num);
+int				ok_letters(char c);
 
 /* ************************* */
 /*	funcs_that_free.c funcs  */
@@ -76,5 +77,14 @@ t_info			*set_color_rgb(char **split, t_info *s, char identifier);
 /* ****************** */
 
 char			**init_map(int len, int wid, char fill);
+
+/* ********************** */
+/*	validate_map.c funcs  */
+/* ********************** */
+
+void			validate_map(t_info *s);
+int				validate_letter_in_map(t_info *s, int posx, int posy);
+int				validate_sprite_in_map(t_info *s, int posx, int posy);
+int				validate_empty_in_map(t_info *s, int posx, int posy);
 
 #endif

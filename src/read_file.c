@@ -6,7 +6,7 @@
 /*   By: teva <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/17 13:22:31 by teva              #+#    #+#             */
-/*   Updated: 2020/10/20 01:26:30 by teva             ###   ########.fr       */
+/*   Updated: 2020/10/21 14:51:08 by teva             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ t_info		*read_map(char *filename, t_info *s)
 		ft_memdel((void **)&line);
 	}
 	close(fd) == -1 ? ft_error(FILE_CLOSE_ERROR) : 0;
+	validate_map(s);
 	ft_memdel((void **)&line);
 	return (s);
 }
